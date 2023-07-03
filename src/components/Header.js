@@ -3,7 +3,7 @@ import React from 'react';
 
 import Logo from '../assets/logo.svg'
 
-const PDF_URL = process.env.PUBLIC_URL + '/shivank_resume.pdf';
+const PDF_URL = '/shivank_resume.pdf';
 
 const Header = () => {
 
