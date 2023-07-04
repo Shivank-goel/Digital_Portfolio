@@ -76,15 +76,15 @@ const Banner = () => {
       viewport={{once:false, amount:0.7}}
        className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 '>
         {/*socials */}
-        <a href='https://github.com/Shivank-goel'>
-          <FaGithub/>
-        </a>
-        <a href='https://www.linkedin.com/in/shivank-goel-6b9911200/'>
-          <FaLinkedin/>
-        </a>
-        <a href='#' >
-          <FaInstagram/>
-        </a>
+        <button onClick={() => window.open('https://github.com/Shivank-goel')}>
+        <FaGithub />
+      </button>
+      <button onClick={() => window.open('https://www.linkedin.com/in/shivank-goel-6b9911200')}>
+        <FaLinkedin />
+      </button>
+      <button onClick={() => window.open('#')}>
+        <FaInstagram />
+      </button>
       </motion.div>
     </div>
     {/* image  */}
