@@ -33,21 +33,19 @@ const About = () => {
      className='flex-1'>
       <h2 className='h2 text-accent'>About me.</h2>
       <h3 className='h3 mb-4'>
-        I'm a freelancer front-end Developer with over 5 years of 
-        experience
+      I am a passionate and driven CSE student who thoroughly enjoys coding and maintains an unwavering commitment to continuous learning.
       </h3>
       <p className='mb-6'>
-        rhuaehguaehu uefhUWBFU EFWIHibfiabf ifuhrefiub fiUHEFIUB Ewiuf
-        WEHFIUHwefiuhEF EfWEFWef
-        fewFWFWGFARGRAEGEARGRGREGRTGEARG 
-        sdfgfr
+        
+Since my ninth-grade year, I have been actively engaged in coding, primarily focusing on Java. 
+Throughout my college journey, I expanded my expertise by delving into software development and further honed my skills in Python
       </p>
       {/* stats */}
       <div className='flex mb-12'>
         <div>
           <div className='text-[40px] font-tertiary text-gradient mb-2'>
            { 
-            inView ? <CountUp start={0} end={3} duration={3}/> : null}
+            inView ? <CountUp start={0} end={7} duration={3}/> : null}
           </div>
           <div className='font-primary text-sm tracking-[2px]'>
             Years of <br />

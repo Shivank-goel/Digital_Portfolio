@@ -3,14 +3,14 @@ import React from 'react';
 
 import Logo from '../assets/logo.svg'
 
-const PDF_URL = '/shivank_resume.pdf';
+const PDF_URL = '/Shivank_Goel_Resume.pdf';
 
 const Header = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = PDF_URL;
-    link.setAttribute('download', 'shivank_resume.pdf');
+    link.setAttribute('download', 'Shivank_Goel_Resume.pdf');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

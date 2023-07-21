@@ -17,20 +17,17 @@ import { fadeIn } from '../variants';
 const skills = [
   {
     name: 'Languages',
-    description:'lorem    '
+    description:'Java, Python, JavaScript, HTML & CSS'
   },
   {
-    name: 'Data Base',
-    description:'lorem    '
+    name: 'DataBase',
+    description:'SQL, MongoDb'
   },
   {
     name: 'Development',
-    description:'lorem    '
+    description:'Web Development, Mern Stack'
   },
-  {
-    name: 'Design',
-    description:'lorem    '
-  },
+ 
   
 ]
 
@@ -52,8 +49,8 @@ const Services = () => {
        className='flex-1 mb-12 lg:mb-0'> 
       <h2 className='h2 text-accent mb-6'> Learning </h2>
       <h3 className='h3 max-w-[445px] mb-16'>
-        I'm a freelancer front-end Developer with over 5 years of 
-        experience
+        
+My knowledge continues to grow
       </h3>
       <button className='btn btn-sm' onClick={handleClick}>Git</button>
       </motion.div>

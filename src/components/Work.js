@@ -9,9 +9,9 @@ import { fadeIn } from '../variants';
 
 //img
 
-import Img1 from '../assets/portfolio-img1.png';
-import Img2 from '../assets/portfolio-img2.png';
-import Img3 from '../assets/portfolio-img3.png'
+import Img1 from '../assets/todolist.png';
+import Img2 from '../assets/keepnotes.png';
+import Img3 from '../assets/webpage.png'
 
 const Work = () => {
 
@@ -38,8 +38,10 @@ const Work = () => {
            Projects
            </h2>
             <p className='max-w-sm mb-16'>
-            lorem lorem fva ragarg  graergae rg arg rae gera ger gra g rg rae gr gre g reag aer gaer
-            gera gera gaer g earg aer gaer gae rg aeg
+            I have actively uploaded projects on GitHub.
+
+
+
             </p>
             <button className='btn btn-sm' onClick={handleClick}>View all projects</button>
           </div>
@@ -54,11 +56,11 @@ const Work = () => {
               alt=' '/>
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>TO DO List</span>
               </div>
               {/* title */}
               <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Tiltle</span>
+                <span className='text-3xl text-white'>Node & Express</span>
               </div>
             </div>  
            </motion.div>
@@ -79,11 +81,11 @@ const Work = () => {
               alt=' '/>
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Keep Notes</span>
               </div>
               {/* title */}
               <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Tiltle</span>
+                <span className='text-3xl text-white'>React</span>
               </div>
             </div> 
           {/* images  */}
@@ -97,11 +99,11 @@ const Work = () => {
               alt=' '/>
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UI/UX Design</span>
+                <span className='text-gradient'>Static Portfolio</span>
               </div>
               {/* title */}
               <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Project Tiltle</span>
+                <span className='text-3xl text-white'>HTML CSS</span>
               </div>
             </div> 
         </motion.div>

@@ -43,9 +43,7 @@ const Banner = () => {
         <TypeAnimation sequence={[
           'Developer',
           2000,
-          'Designer',
-          2000,
-          'Coder',
+          'Programmer',
           2000
         ]}
           speed={50}
@@ -59,8 +57,8 @@ const Banner = () => {
       initial='hidden'
       whileInView={'show'}
       viewport={{once:false, amount:0.7}}
-      className='mb-8 max-w-lg mx-ayto lg:mx-0'>lorem fva ragarg  graergae rg arg rae gera ger gra g rg rae gr gre g reag aer gaer
-       gera gera gaer g earg aer gaer gae rg aeg 
+      className='mb-8 max-w-lg mx-ayto lg:mx-0'>I am excited to introduce myself as a passionate and diligent B.Tech student in Computer Science & Engineering, eager to embark on a rewarding journey in the world of technology and innovation.
+      am a quick learner, always eager to acquire new skills and stay updated with the latest advancements.
       </motion.p>
       <motion.div
       variants={fadeIn('up', 0.3)}
