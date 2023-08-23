@@ -10,7 +10,7 @@ import { fadeIn } from '../variants';
 //img
 
 import Img1 from '../assets/todolist.png';
-import Img2 from '../assets/keepnotes.png';
+import Img2 from '../assets/Travel_Nest.jpeg';
 import Img3 from '../assets/webpage.png'
 
 const Work = () => {
@@ -81,7 +81,7 @@ const Work = () => {
               alt=' '/>
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>Keep Notes</span>
+                <span className='text-gradient'>Hotel Review System</span>
               </div>
               {/* title */}
               <div  className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
