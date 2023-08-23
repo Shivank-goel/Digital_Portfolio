@@ -17,7 +17,7 @@ const Header = () => {
   };
 
 
-  return <header className=' py-8'>
+  return <header className=' py-6'>
     <div className='container mx-auto'>
      <div className='flex justify-between items-center'>
       {/* logo */}
@@ -25,7 +25,7 @@ const Header = () => {
       <img src={Logo} alt=' '/>
       </a>
       {/* button */}
-      <button type='button' className='btn btn-sm' onClick={handleDownload}>
+      <button type='button' className='btn btn-sm mt-12' onClick={handleDownload}>
         CV
       </button>
      </div>

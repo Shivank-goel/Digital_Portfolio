@@ -90,7 +90,7 @@ const Banner = () => {
   variants={fadeIn('down', 0.3)}
       initial='hidden'
       whileInView={'show'}
-    className='hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] '>
+    className='hidden lg:flex felx-1 max-w-[320px] lg:max-w-[482px] justify-center '>
     <img className=' w-1/2 h-1/2 rounded-full' src={Image} alt=' '></img>
     </motion.div>
     </div>
