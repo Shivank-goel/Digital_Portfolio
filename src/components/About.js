@@ -2,7 +2,7 @@ import React from 'react';
 
 //countup
 
-import CountUp from 'react-countup';
+
 
 //intersection observer hook
 
@@ -41,18 +41,7 @@ Since my ninth-grade year, I have been actively engaged in coding, primarily foc
 Throughout my college journey, I expanded my expertise by delving into software development and further honed my skills in Python
       </p>
       {/* stats */}
-      <div className='flex mb-12'>
-        <div>
-          <div className='text-[40px] font-tertiary text-gradient mb-2'>
-           { 
-            inView ? <CountUp start={0} end={7} duration={3}/> : null}
-          </div>
-          <div className='font-primary text-sm tracking-[2px]'>
-            Years of <br />
-            Experience
-          </div>
-        </div>
-      </div>
+      
     </motion.div>
    </div>
    </section>

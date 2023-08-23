@@ -16,16 +16,17 @@ import { fadeIn } from '../variants';
 
 const skills = [
   {
-    name: 'Languages',
-    description:'Java, Python, JavaScript, HTML & CSS'
+    name: 'Programming/DataBase',
+    description:'Java, Python, JavaScript, SQL, MongoDb'
+  },
+ 
+  {
+    name: 'Frameworks /Libraries',
+    description:'React, Node JS, Express, Tailwind CSS, Spring Boot'
   },
   {
-    name: 'DataBase',
-    description:'SQL, MongoDb'
-  },
-  {
-    name: 'Development',
-    description:'Web Development, Mern Stack'
+    name: 'Tools',
+    description:'Git, GitHub, Docker'
   },
  
   
