@@ -36,8 +36,14 @@
 
 .active {
   color: #fff;
-  padding: 1rem;
+  padding: 0.65rem;
   border-radius: 100%;
+}
+
+@media (min-width: 1024px) {
+  .active {
+    padding: 1rem;
+  }
 }
 
 @layer base {
@@ -45,10 +51,10 @@
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+    @apply font-heading text-[32px] mb-6 tracking-[10%] uppercase;
   }
   .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply font-primary font-semibold text-[20px] lg:text-[26px] mb-6 leading-[1.5] lg:leading-[46px];
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;

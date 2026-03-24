@@ -1,13 +1,5 @@
 import React from 'react';
 
-//countup
-
-import CountUp from 'react-countup';
-
-//intersection observer hook
-
-import {useInView} from 'react-intersection-observer';
-
 //motion
 
 import {motion} from 'framer-motion';
@@ -18,42 +10,50 @@ import { fadeIn} from '../variants';
 
 
 const About = () => {
-  const [ref, inView ] = useInView({
-    threshold: 0.5,
-  })
   return(
-   <section className='section' id='about' ref={ref}>
+   <section className='section' id='about'>
    <div className='container mx-auto '>
+    <div className='flex flex-col lg:flex-row gap-x-10'>
     {/* text */}
+    <motion.div
+    variants={fadeIn('right' , 0.5)}
+    initial='hidden'
+    whileInView={'show'}
+    viewport={{once:false, amount:0.3}}
+     className='flex-1 mb-8 lg:mb-0'>
+      <h2 className='h2 text-accent'>About me.</h2>
+      <h3 className='h3 mb-4'>
+      Software Engineer by profession, AI enthusiast by passion — I build intelligent systems and modern web applications.
+      </h3>
+      <p className='mb-6'>
+I'm a Software Engineer with a B.Tech in Computer Science & Engineering. At work, I focus on building software solutions, 
+while my passion projects revolve around LLMs, AI Agents, and RAG-based systems. I also take on freelance web development 
+projects, helping businesses establish a strong digital presence with modern, responsive websites.
+      </p>
+    </motion.div>
+    {/* highlights */}
     <motion.div
     variants={fadeIn('left' , 0.5)}
     initial='hidden'
     whileInView={'show'}
     viewport={{once:false, amount:0.3}}
      className='flex-1'>
-      <h2 className='h2 text-accent'>About me.</h2>
-      <h3 className='h3 mb-4'>
-      I am a passionate and driven CSE student who thoroughly enjoys coding and maintains an unwavering commitment to continuous learning.
-      </h3>
-      <p className='mb-6'>
-        
-Since my ninth-grade year, I have been actively engaged in coding, primarily focusing on Java. 
-Throughout my college journey, I expanded my expertise by delving into software development and further honed my skills in Python
-      </p>
-      {/* stats */}
-      <div className='flex mb-12'>
-        <div>
-          <div className='text-[40px] font-tertiary text-gradient mb-2'>
-           { 
-            inView ? <CountUp start={0} end={2} duration={3}/> : null}
-          </div>
-          <div className='font-primary text-sm tracking-[2px]'>
-            Years of <br />
-            Experience
-          </div>
+      <div className='flex flex-col gap-y-6'>
+        <div className='border-b border-white/20 pb-6'>
+          <h4 className='text-[20px] font-primary font-semibold text-gradient mb-2'>Software Engineer</h4>
+          <p className='font-secondary text-sm'>Currently employed as a Software Engineer, building and shipping production-grade software solutions.</p>
+        </div>
+        <div className='border-b border-white/20 pb-6'>
+          <h4 className='text-[20px] font-primary font-semibold text-gradient mb-2'>LLMs & AI Agents</h4>
+          <p className='font-secondary text-sm'>Working with Large Language Models, RAG pipelines, and autonomous AI agents to solve real-world problems.</p>
+        </div>
+        <div className='border-b border-white/20 pb-6'>
+          <h4 className='text-[20px] font-primary font-semibold text-gradient mb-2'>Freelance Web Development</h4>
+          <p className='font-secondary text-sm'>Building custom, responsive websites for clients — from landing pages to full-stack web applications.</p>
         </div>
       </div>
     </motion.div>
+    </div>
    </div>
    </section>
    );

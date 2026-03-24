@@ -32,8 +32,9 @@ const Contact = () => {
        className='flex-1 flex justify-start items-center'>
       <div>
         <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch </h4>
-        <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br/> together!
+        <h2 className='text-[32px] sm:text-[45px] lg:text-[90px] leading-none mb-4'>Let's work <br/> together!
         </h2>
+        <p className='text-white/60 mb-8 max-w-sm'>Have a project in mind? Whether it's an AI solution or a website — I'm available for freelance work. Let's build something great.</p>
         </div>
       </motion.div>
       {/* form */}
@@ -46,7 +47,7 @@ const Contact = () => {
        initial='hidden'
        whileInView={'show'}
        viewport={{once:false, amount:0.3}}
-       className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
+       className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-12 lg:pb-24 p-6 items-start'>
         <input
         onChange={e=>setName(e.target.value)}
          className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white

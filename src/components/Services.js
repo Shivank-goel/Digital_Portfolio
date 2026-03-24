@@ -16,20 +16,21 @@ import { fadeIn } from '../variants';
 
 const skills = [
   {
-    name: 'Programming/DataBase',
-    description:'Java, Python, JavaScript, SQL, MongoDb'
-  },
- 
-  {
-    name: 'Frameworks /Libraries',
-    description:'React, Node JS, Express, Tailwind CSS, Spring Boot'
+    name: 'LLMs & AI Agents',
+    description:'Building intelligent systems using Large Language Models, RAG pipelines, and autonomous AI agents.'
   },
   {
-    name: 'Tools',
-    description:'Git, GitHub, Docker'
+    name: 'Freelance Web Development',
+    description:'Custom websites, landing pages, e-commerce sites, and web applications tailored to your business needs.'
   },
- 
-  
+  {
+    name: 'Programming / Database',
+    description:'Python, Java, JavaScript, SQL, MongoDB'
+  },
+  {
+    name: 'Frameworks & Tools',
+    description:'React, Node.js, Express, Tailwind CSS, Spring Boot, LangChain, Docker, Git, Netlify'
+  },
 ]
 
 const Services = () => {
@@ -48,12 +49,12 @@ const Services = () => {
        whileInView={'show'}
        viewport={{once:false, amount:0.3}}
        className='flex-1 mb-12 lg:mb-0'> 
-      <h2 className='h2 text-accent mb-6'> Learning </h2>
+      <h2 className='h2 text-accent mb-6'> Skills & Services </h2>
       <h3 className='h3 max-w-[445px] mb-16'>
         
-My knowledge continues to grow
+I build AI-powered systems and modern web applications.
       </h3>
-      <button className='btn btn-sm' onClick={handleClick}>Git</button>
+      <button className='btn btn-sm' onClick={handleClick}>View GitHub</button>
       </motion.div>
       {/* skills */}
       <motion.div
@@ -68,7 +69,7 @@ My knowledge continues to grow
             //destructure skills
             const {name, description} = skills;
             return(
-              <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
+              <div className='border-b border-white/20 min-h-[100px] pb-6 mb-[24px] flex' key={index}>
               <div className='max-w-[476px]'>
               <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'> {name} </h4>
               <p className='font-secondary leading-tight'>{description}</p>
